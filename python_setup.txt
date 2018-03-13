@@ -1,0 +1,6 @@
+#run with sudo pip install - r python_setup.txt
+pyyaml
+numpy
+openpyxl
+
+
