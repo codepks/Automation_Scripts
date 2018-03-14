@@ -14,6 +14,9 @@ cd /
 sudo git clone https://github.com/pkspats/Neural-Network-Projects.git
 sudo git clone https://github.com/pkspats/Automation_Scripts.git
 
+echo "Downloading and installing alien..."
+sudo apt install alien
+
 echo "Installing Themes...."
 sudo apt remove unity-tweak-tool && sudo apt install -y gnome-tweak-tool
 sudo apt install -y numix-gtk-theme
