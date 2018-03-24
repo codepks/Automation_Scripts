@@ -14,6 +14,12 @@ cd /
 sudo git clone https://github.com/pkspats/Neural-Network-Projects.git
 sudo git clone https://github.com/pkspats/Automation_Scripts.git
 
+echo "Downloading and installing slack..."
+cd ~/Downloads
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.6.3-amd64.deb
+sudo dkpg -i ./slack-desktop-2.6.3-amd64.deb
+
+
 echo "Downloading and installing alien..."
 sudo apt install alien
 
@@ -25,3 +31,11 @@ sudo apt install -y pop-theme
 sudo apt install -y adapta-gtk-theme
 sudo apt install -y vertex-theme
 sudo apt install -y arc-theme
+
+echo "installing vimrc from mardava's github'"
+cd
+git clone https://github.com/mrdv-rjgpl/dotvim.git .vim
+cd ~/.vim
+./install.sh
+
+
