@@ -38,4 +38,27 @@ git clone https://github.com/mrdv-rjgpl/dotvim.git .vim
 cd ~/.vim
 ./install.sh
 
+echo "installing eclipse for c/cpp"
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt update
+sudo apt install ubuntu-make
+umake ide eclipse-cpp
+echo "installing tool-chain for Cortex arm processor"
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
+sudo apt-get update
+sudo apt-get install gcc-arm-embedded
+
+
+echo "installing vivado"
+echo "download the package and press go after entering"
+name="go_no_go"
+read name
+echo "after you have installed the package press go"
+read name
+source /opt/Xilinx/Vivado/2018.1/settings64.sh
+mkdir ~/vivado
+cd ~/vivado/
+echo "type 'vivado &' to start the s/w"
+
+
 
